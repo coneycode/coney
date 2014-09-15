@@ -1,0 +1,37 @@
+<div class="openaside"><a class="navbutton" href="#" title="<%= __('showsidebar') %>"></a></div>
+<% if( table&&(item.toc !== false) && theme.toc.aside){ %>
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title"><%= __('contents') %></strong>
+  <%- toc(item.content) %>
+  </div>
+<% } %>
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="<%= __('hidesidebar') %>"></a></div>
+<aside class="clearfix">
+<div id="authorInfo">
+	<% if(theme.author_img_enable == true){ %>
+		<div class="author-logo"></div>		
+	<% } %>
+	<div class="social-list" class="clearfix">
+		<% if(theme.author.weibo){ %>
+		<a href="http://weibo.com/<%= theme.author.weibo %>" target="_blank" title="weibo"></a>
+		<% } %>
+		<% if(theme.author.twitter){ %>
+		<a href="https://twitter.com/<%=theme.author.twitter %>" target="_blank" title="twitter"></a>
+		<% } %>
+		<% if(theme.author.github){ %>
+		<a href="https://github.com/<%=theme.author.github %>" target="_blank" title="github"></a>
+		<% } %>
+		<% if(theme.author.facebook){ %>
+		<a href="https://www.facebook.com/<%=theme.author.facebook %>" target="_blank" title="facebook"></a>
+		<% } %>
+		<% if(theme.author.zhihu){ %>
+		<a href="https://zhihu.com/people/<%=theme.author.zhihu %>" target="_blank" title="zhihu"></a>
+		<% } %>
+	</div>
+</div>
+<% theme.widgets.forEach(function(widget){ %>
+  <%- partial('../_widget/' + widget) %>
+<% }); %>
+</aside>
+</div>
