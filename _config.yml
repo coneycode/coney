@@ -15,6 +15,7 @@ widgets:
 - tag
 - links
 - rss
+- tagcloud
 ## provide six widgets:category,tag,rss,archive,tagcloud,links.
 ## modify links in `/layout/_widget/links.ejs`.
 
@@ -24,9 +25,9 @@ rss:  atom.xml ## RSS address.
 #### Image
 imglogo:
   enable: false             ## display image logo true/false.
-  src: img/logo.svg        ## `.svg` and `.png` are recommended,please put image into the theme folder `/pacman/source/img`.
-favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/pacman/source/img`.     
-apple_icon: img/coney.png ## size:114px*114px,please put image into the theme folder `/pacman/source/img`.
+  src: img/logo.svg        ## `.svg` and `.png` are recommended,please put image into the theme folder `/coney/source/img`.
+favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/coney/source/img`.     
+apple_icon: img/coney.png ## size:114px*114px,please put image into the theme folder `/coney/source/img`.
 
 #### Author Avatar Picture
 author_img_enable: true ## display author avatar picture
@@ -40,7 +41,7 @@ author_img: img/coney.png ## size:220px*220px.
 
 #### Font
 ShowCustomFont: true  
-## you can change custom font in `variable.styl` and `font.styl` which in the theme folder `/pacman/source/css`.
+## you can change custom font in `variable.styl` and `font.styl` which in the theme folder `/coney/source/css`.
 
 #### Toc
 toc:
@@ -53,7 +54,7 @@ toc:
 fancybox: false 
 ## if you use gallery post or want use fancybox please set the value to true.
 ## if you want use fancybox in ANY post please copy the file `fancybox.js`.
-## in theme folder `/pacman/scripts` to your hexo blog folder `../scritps`.
+## in theme folder `/coney/scripts` to your hexo blog folder `../scritps`.
 
 #### Author information
 author:
@@ -91,7 +92,7 @@ google_analytics:
 
 ####background music 
 background_music:
-  enable: true
+  enable: false
   src: 
 #### Custom Search
 google_cse: 
