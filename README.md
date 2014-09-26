@@ -15,7 +15,7 @@ $ git clone https://github.com/coneycode/coney-hexo-theme
 Modify `theme` setting in blog folder` _config.yml` to `coney`.
 ###Update
 ```
-cd themes/coney
+cd themes/coney-hexo-theme
 git pull
 ```
 **please backup your `_config.yml` file before update.** 
