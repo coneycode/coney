@@ -81,11 +81,11 @@ jiathis:
 
 ####Baidu Analytics
 baidu_analytics:
-  enable: true
+  enable: false
   id: 391982416296a0d54221f59fe35250d4 # your baidu analytics id
 ####Baidu Share
 baidu_share:
-  enable: true
+  enable: false
 
 google_analytics:
   enable: false
