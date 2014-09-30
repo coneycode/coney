@@ -62,9 +62,9 @@ author:
   intro_line1: "" ## eg: "Hello ,I'm Larry Page in Google."
   intro_line2: "This is my blog,believe it or not." ## eg: "This is my blog,believe it or not."
   weibo:      coneylife ## e.g. 436062867 for http://weibo.com/436062867
-  twitter:    ## e.g. yangjiansky for https://twitter.com/yangjiansky
+  twitter:    ## e.g. gengbiaosky for https://twitter.com/yangjiansky
   github:     coneycode ## e.g. A-limon for https://github.com/A-limon
-  facebook:   ## e.g. yangjian for https://favebook.com/yangjian
+  facebook:   ## e.g. gengbiao for https://favebook.com/yangjian
   tsina:      1005055274569156 ## e.g. 1664838973  Your weibo ID,It will be used in share button.
   zhihu:     # coneylife
 
@@ -88,9 +88,9 @@ baidu_share:
   enable: true
 
 google_analytics:
-  enable: false
-  id:   ## e.g. UA-1766729-8 your google analytics ID.
-  site: ## e.g. yangjian.me your google analytics site or set the value as auto.
+  enable: true
+  id:  UA-55273525-1 ## e.g. UA-1766729-8 your google analytics ID.
+  site: gengbiao.me ## e.g. gengbiao.me your google analytics site or set the value as auto.
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 
