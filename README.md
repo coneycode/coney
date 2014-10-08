@@ -10,7 +10,7 @@ coney is a flat and responsive design theme for [Hexo](http://hexo.io).
 ```
 $ git clone https://github.com/coneycode/coney-hexo-theme
 ```
-**Pacman requires Hexo 2.4.5 and above.** 
+**Coney requires Hexo 2.4.5 and above.** 
 ###Enable
 Modify `theme` setting in blog folder` _config.yml` to `coney`.
 ###Update
@@ -18,7 +18,8 @@ Modify `theme` setting in blog folder` _config.yml` to `coney`.
 cd themes/coney-hexo-theme
 git pull
 ```
-**please backup your `_config.yml` file before update.** 
+**please backup your `_config.yml` file before update. **
+**you can star my porject to get information while I update the theme.** 
 ##Configuration
 
 Modify settings in  `/themes/coney/_config.yml`.
