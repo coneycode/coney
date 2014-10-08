@@ -14,7 +14,7 @@ you can star my porject to get information while I update the theme.
         <span class="octicon octicon-star"></span>
         Unstar
       </button>
-        <a class="social-count js-social-count" href="/coneycode/coney-hexo-theme/stargazers">
+        <a class="social-count js-social-count" href="https://github.com/coneycode/coney-hexo-theme/stargazers">
           2
         </a>
     </form>
