@@ -18,8 +18,8 @@ Modify `theme` setting in blog folder` _config.yml` to `coney`.
 cd themes/coney-hexo-theme
 git pull
 ```
-**please backup your `_config.yml` file before update. **
-**you can star my porject to get information while I update the theme.** 
+
+**please backup your `_config.yml` file before update.you can star my porject to get information while I update the theme.** 
 ##Configuration
 
 Modify settings in  `/themes/coney/_config.yml`.
