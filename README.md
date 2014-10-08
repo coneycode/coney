@@ -2,6 +2,7 @@
 based on [Pacman](https://github.com/A-limon/pacman).
 
 coney is a flat and responsive design theme for [Hexo](http://hexo.io).
+**you can star my porject to get information while I update the theme.**
 
 [Demo](http://gengbiao.me)
 
@@ -19,7 +20,7 @@ cd themes/coney-hexo-theme
 git pull
 ```
 
-**please backup your `_config.yml` file before update.you can star my porject to get information while I update the theme.** 
+**please backup your `_config.yml` file before update.** 
 ##Configuration
 
 Modify settings in  `/themes/coney/_config.yml`.
