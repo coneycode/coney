@@ -39,6 +39,18 @@
       <%- partial('_partial/after_footer') %>
     </body>
    </html>
+   <% } else if(page.layout=='baidu_search'){ %>
+ <%- partial('_partial/head') %>
+    <body>
+      <header>
+        <%- partial('_partial/header') %>
+      </header>
+      <div id="container">
+        <%- partial('_partial/baidu_search')%>
+      </div>
+      <%- partial('_partial/after_footer') %>
+    </body>
+   </html>
 <% } else if(page.layout=='tags'){ %>
  <%- partial('_partial/head') %>
     <body>

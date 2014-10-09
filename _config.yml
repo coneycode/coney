@@ -81,12 +81,15 @@ jiathis:
 
 ####Baidu Analytics
 baidu_analytics:
-  enable: false
+  enable: true
   id: 391982416296a0d54221f59fe35250d4 # your baidu analytics id
 ####Baidu Share
 baidu_share:
-  enable: false
-
+  enable: true
+baidu_search:
+  enable: true
+  id: '2049782880735612718'
+  site: http://search.gengbiao.me/cse/search  #your can change your site instead the default site
 google_analytics:
   enable: true
   id:  UA-55273525-1 ## e.g. UA-1766729-8 your google analytics ID.
@@ -100,7 +103,7 @@ background_music:
   src: 
 #### Custom Search
 google_cse: 
-  enable: true
+  enable: false
   cx: 010584917530731754670:91c2z8qybp0  ## e.g. 000561263943549425496:mrzrm0gr4kg your Custom Search ID
 ## https://www.google.com/cse/ 
 ## To enable the custom search You must create a "search" folder in '/source' and a "index.md" file
