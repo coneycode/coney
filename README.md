@@ -8,6 +8,8 @@ you can star my porject to get information while I update the theme.
   
 [Demo](http://gengbiao.me)
 
+中文说明地址[README.md](http://gengbiao.me/2014/10/13/coney%E4%B8%BB%E9%A2%98%E4%BB%8B%E7%BB%8D/)
+
 ##Installation
 ###Install
 ```
