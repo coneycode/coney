@@ -27,7 +27,6 @@ imglogo:
   enable: false             ## display image logo true/false.
   src: img/logo.svg        ## `.svg` and `.png` are recommended,please put image into the theme folder `/coney/source/img`.
 favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/coney/source/img`.     
-apple_icon: img/coney.png ## size:114px*114px,please put image into the theme folder `/coney/source/img`.
 
 #### Author Avatar Picture
 author_img_enable: true ## display author avatar picture
@@ -59,14 +58,12 @@ fancybox: false
 #### Author information
 author:
   google_plus:    ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998
-  intro_line1: "" ## eg: "Hello ,I'm Larry Page in Google."
-  intro_line2: "This is my blog,believe it or not." ## eg: "This is my blog,believe it or not."
   weibo:      coneylife ## e.g. 436062867 for http://weibo.com/436062867
   twitter:    ## e.g. gengbiaosky for https://twitter.com/yangjiansky
-  github:     coneycode ## e.g. A-limon for https://github.com/A-limon
+  github:     coneycode ## e.g. coneycode for https://github.com/coneycode
   facebook:   ## e.g. gengbiao for https://favebook.com/yangjian
   tsina:      1005055274569156 ## e.g. 1664838973  Your weibo ID,It will be used in share button.
-  zhihu:     # coneylife
+  zhihu:     # coneylife, now it is no icon, I have push an issue to Font Awesome.
 
 #### Comment
 duoshuo: 
@@ -83,16 +80,20 @@ jiathis:
 baidu_analytics:
   enable: true
   id: 391982416296a0d54221f59fe35250d4 # your baidu analytics id
+
 ####Baidu Share
 baidu_share:
   enable: true
+  
+ ####Baidu search 
 baidu_search:
   enable: true
   id: '2049782880735612718'
   site: http://search.gengbiao.me/cse/search  #your can change your site instead the default site
+
 google_analytics:
   enable: true
-  id:  UA-55273525-1 ## e.g. UA-1766729-8 your google analytics ID.
+  id:  UA-55273525-1 ## e.g. UA-55273525-1 your google analytics ID.
   site: gengbiao.me ## e.g. gengbiao.me your google analytics site or set the value as auto.
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
