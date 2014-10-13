@@ -8,7 +8,7 @@ you can star my porject to get information while I update the theme.
   
 [Demo](http://gengbiao.me)
 
-中文说明地址[README.md](http://gengbiao.me/2014/10/13/coney%E4%B8%BB%E9%A2%98%E4%BB%8B%E7%BB%8D/)
+中文说明地址点[这里](http://gengbiao.me/2014/10/13/coney%E4%B8%BB%E9%A2%98%E4%BB%8B%E7%BB%8D/)
 
 ##Installation
 ###Install
@@ -57,16 +57,11 @@ rss:  atom.xml ## RSS address.
 imglogo:
   enable: false             ## display image logo true/false.
   src: img/logo.svg        ## `.svg` and `.png` are recommended,please put image into the theme folder `/coney/source/img`.
+
 favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/coney/source/img`.     
-apple_icon: img/coney.png ## size:114px*114px,please put image into the theme folder `/coney/source/img`.
 
 #### Author Avatar Picture
 author_img_enable: true ## display author avatar picture
-dataURI: false
-## if the picture's format is dataURI please set the value to true,otherwise set the value to false.
-## convert an image into base 64 data URIs http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/ .
-author_img_data: ''
-## paste the dataURI in ONE LINE and included it by ''.
 author_img: img/coney.png ## size:220px*220px.
 ## if the picture's format is `.png` or `.jpg`  instead of dataURI,you should set the `dataURI` value to false.
 
@@ -92,7 +87,7 @@ author:
   google_plus:    ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998
   weibo:      coneylife ## e.g. 436062867 for http://weibo.com/436062867
   twitter:    ## e.g. gengbiaosky for https://twitter.com/yangjiansky
-  github:     coneycode ## e.g. A-limon for https://github.com/A-limon
+  github:     coneycode ## e.g. coneycode for https://github.com/coneycode
   facebook:   ## e.g. gengbiao for https://favebook.com/yangjian
   tsina:      1005055274569156 ## e.g. 1664838973  Your weibo ID,It will be used in share button.
   zhihu:     # coneylife, now it is no icon, I have push an issue to Font Awesome.
@@ -111,17 +106,17 @@ jiathis:
 ####Baidu Analytics
 baidu_analytics:
   enable: true
-  id: 391982416296a0d54221f59fe35250d4 # your baidu analytics id
+  id: # your baidu analytics id
 ####Baidu Share
 baidu_share:
   enable: true
 baidu_search:
   enable: true
-  id: '2049782880735612718'
-  site: http://search.gengbiao.me/cse/search  #your can change your site instead the default site
+  id:   #your baidu_search_id
+  site: http://search.baidu.com/cse/search  #your can change your site instead the default site
 google_analytics:
   enable: true
-  id:  UA-55273525-1 ## e.g. UA-1766729-8 your google analytics ID.
+  id:   ## e.g. UA-55273525-1  your google analytics ID.
   site: gengbiao.me ## e.g. gengbiao.me your google analytics site or set the value as auto.
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
@@ -133,7 +128,7 @@ background_music:
 #### Custom Search
 google_cse: 
   enable: false
-  cx: 010584917530731754670:91c2z8qybp0  ## e.g. 000561263943549425496:mrzrm0gr4kg your Custom Search ID
+  cx:  ## e.g. 000561263943549425496:91c2z8qybp0 your Custom Search ID
 ## https://www.google.com/cse/ 
 ## To enable the custom search You must create a "search" folder in '/source' and a "index.md" file
 ## set the 'front-matter' as
