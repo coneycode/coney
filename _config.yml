@@ -59,14 +59,12 @@ fancybox: false
 #### Author information
 author:
   google_plus:    ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998
-  intro_line1: "" ## eg: "Hello ,I'm Larry Page in Google."
-  intro_line2: "This is my blog,believe it or not." ## eg: "This is my blog,believe it or not."
   weibo:      ## e.g. coneylife for http://weibo.com/coneylife
   twitter:    ## e.g. gengbiaosky for https://twitter.com/yangjiansky
   github:     ## e.g. coneycode for https://github.com/coneycode
   facebook:   ## e.g. gengbiao for https://favebook.com/yangjian
   tsina:       ## e.g. 1005055274569156  Your weibo ID,It will be used in share button.
-  zhihu:     # coneylife
+  zhihu:     # coneylife, now it is no icon, I have push an issue to Font Awesome.¬
 
 #### Comment
 duoshuo: 
@@ -89,7 +87,7 @@ baidu_share:
 baidu_search:
   enable: false
   id:          #e.g. '2049782880735612718' attention, you must follow the format 'your id'. 
-  site: http://zhannei.baidu.com/cse/search  # e.g. http://search.gengbiao.me/cse/search,your can change your site instead the default site
+  site:   # e.g. http://search.gengbiao.me/cse/search,your can change your site instead the default site
 google_analytics:
   enable: false
   id:   ## e.g. UA-55273525-1 your google analytics ID.
