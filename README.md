@@ -21,7 +21,7 @@ Modify `theme` setting in blog folder` _config.yml` to `coney`.
 ###Update
 ```
 cd themes/coney-hexo-theme
-git pull
+git pull origin master
 ```
 
 **please backup your `_config.yml` file before update.** 
