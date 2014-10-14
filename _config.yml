@@ -84,6 +84,7 @@ baidu_analytics:
 ####Baidu Share
 baidu_share:
   enable: true
+  color: 4
 
  ####Baidu search 
 baidu_search:
