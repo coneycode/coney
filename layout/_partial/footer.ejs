@@ -1,5 +1,6 @@
 <div id="footer" >
-	<% if(theme.author_img_enable == true){ %>
+    <% /*  %>
+    <% if(theme.author_img_enable == true){ %>
 	<div class="line">
 		<span></span>
 		<div class="author"></div>
@@ -24,12 +25,13 @@
 		<% if(theme.author.facebook){ %>
 		<a href="https://www.facebook.com/<%=theme.author.facebook %>" target="_blank" title="facebook"></a>
 		<% } %>
-	</div>
-		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/coneycode/coney-hexo-theme" target="_blank" title="Coney">Coney</a> © <%= new Date().getFullYear() %> 
+            </div>
+            <% */ %>
+            <p class="copyright"> © <%= new Date().getFullYear() %> 
 		<% if (config.author) { %>
 		<a href="<%= config.url %>" target="_blank" title="<%= config.author %>"><%= config.author %></a>
 		<% } else {%>
 		<a href="<%= config.url %>" title="<%= config.title %>"><%= config.title %></a>
 		<% } %>
-		</p>
+            && Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> && Theme by <a href="https://github.com/coneycode/coney-hexo-theme" target="_blank" title="coney">coney</a> 
 </div>
