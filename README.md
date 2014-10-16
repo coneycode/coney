@@ -17,6 +17,9 @@ $ git clone -b master https://github.com/coneycode/coney-hexo-theme
 **Coney requires Hexo 2.4.5 and above.** 
 ###Enable
 Modify `theme` setting in blog folder` _config.yml` to `coney`.
+```
+theme = coney
+```
 ###Update
 ```
 cd themes/coney-hexo-theme
