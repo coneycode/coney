@@ -8,6 +8,7 @@
       <%- body %>
       <%- partial('_partial/sidebar',{item: page,table: true}) %>
     </div>
+    <footer><%- partial('_partial/footer') %></footer>
     <%- partial('_partial/after_footer') %>
   </body>
 </html>
@@ -20,7 +21,8 @@
         </header>
         <div id="container">
           <%- body %>
-        </div>
+      </div>
+      <footer><%- partial('_partial/footer') %></footer>
         <%- partial('_partial/after_footer') %>
       </body>
      </html>
@@ -35,7 +37,8 @@
       </header>
       <div id="container">
         <%- partial('_partial/search')%>
-      </div>
+    </div>
+    <footer><%- partial('_partial/footer') %></footer>
       <%- partial('_partial/after_footer') %>
     </body>
    </html>
@@ -47,7 +50,8 @@
       </header>
       <div id="container">
         <%- partial('_partial/baidu_search')%>
-      </div>
+    </div>
+    <footer><%- partial('_partial/footer') %></footer>
       <%- partial('_partial/after_footer') %>
     </body>
    </html>
@@ -60,6 +64,7 @@
       <div id="container">
           <%- partial('_partial/tags')%>
       </div>
+      <footer><%- partial('_partial/footer') %></footer>
       <%- partial('_partial/after_footer') %>
     </body>
    </html>
@@ -72,6 +77,7 @@
       <div id="container">
           <%- partial('_partial/categories')%>
       </div>
+      <footer><%- partial('_partial/footer') %></footer>
       <%- partial('_partial/after_footer') %>
     </body>
    </html>
@@ -83,7 +89,8 @@
       </header>
       <div id="container">
         <%- body %>
-      </div>
+    </div>
+    <footer><%- partial('_partial/footer') %></footer>
       <%- partial('_partial/after_footer') %>
     </body>
    </html>
@@ -96,7 +103,8 @@
     <div id="container">
       <%- body %>
       <%- partial('_partial/sidebar',{item: page,table: false}) %>
-    </div>
+  </div>
+  <footer><%- partial('_partial/footer') %></footer>
     <%- partial('_partial/after_footer') %>
   </body>
  </html>
