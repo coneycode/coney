@@ -5,7 +5,6 @@ coney is a flat and responsive design theme for [Hexo](http://hexo.io).
 
 you can star my porject to get information while I update the theme.
 
-  
 [Demo](http://gengbiao.me)
 
 中文说明地址点[这里](http://gengbiao.me/2014/10/13/coney%E4%B8%BB%E9%A2%98%E4%BB%8B%E7%BB%8D/)
@@ -18,10 +17,13 @@ $ git clone -b master https://github.com/coneycode/coney-hexo-theme
 **Coney requires Hexo 2.4.5 and above.** 
 ###Enable
 Modify `theme` setting in blog folder` _config.yml` to `coney`.
+```
+theme = coney
+```
 ###Update
 ```
 cd themes/coney-hexo-theme
-git pull origin master
+git pull
 ```
 
 **please backup your `_config.yml` file before update.** 
