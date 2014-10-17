@@ -58,17 +58,17 @@ fancybox: false
 #### Author information
 author:
   google_plus:    ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998
-  weibo:      coneylife ## e.g. 436062867 for http://weibo.com/436062867
+  weibo:      ## e.g. 436062867 for http://weibo.com/436062867
   twitter:    ## e.g. gengbiaosky for https://twitter.com/yangjiansky
-  github:     coneycode ## e.g. coneycode for https://github.com/coneycode
+  github:     ## e.g. coneycode for https://github.com/coneycode
   facebook:   ## e.g. gengbiao for https://favebook.com/yangjian
-  tsina:      1005055274569156 ## e.g. 1664838973  Your weibo ID,It will be used in share button.
+  tsina:      ## e.g. 1664838973  Your weibo ID,It will be used in share button.
   zhihu:     # coneylife, now it is no icon, I have push an issue to Font Awesome.
 
 #### Comment
 duoshuo: 
   enable: true  ## duoshuo.com
-  short_name: coney ## e.g. coney,duoshuo short name.
+  short_name:  ## e.g. coney,duoshuo short name.
 
 #### Share button
 jiathis:
@@ -89,21 +89,16 @@ baidu_share:
  ####Baidu search 
 baidu_search:
   enable: true
-  id: '2049782880735612718'
-  site: http://search.gengbiao.me/cse/search  #your can change your site instead the default site
+  id: 
+  site: http://search.baidu.com/cse/search  #your can change your site instead the default site
 
 google_analytics:
   enable: true
-  id:  UA-55273525-1 ## e.g. UA-55273525-1 your google analytics ID.
-  site: gengbiao.me ## e.g. gengbiao.me your google analytics site or set the value as auto.
+  id:   ## e.g. UA-55273525-1 your google analytics ID.
+  site: ## e.g. gengbiao.me your google analytics site or set the value as auto.
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 
-theme_color:
-  background: "#dddddd"
-  font: "#817c7c"
-  theme: '#ea6753'
-  footer: "#ffffff"
 ####background music 
 background_music:
   enable: false
@@ -118,3 +113,4 @@ google_cse:
 ## layout: search 
 ## title: search
 ## ---
+
