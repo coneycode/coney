@@ -86,6 +86,11 @@ baidu_share:
   enable: true
   color: 4
 
+theme_color:
+    background: "#dddddd"
+    font: "#817c7c"
+    theme: '#ea6753'
+    footer: "#ffffff"
  ####Baidu search 
 baidu_search:
   enable: true
