@@ -12,7 +12,7 @@ you can star my porject to get information while I update the theme.
 ##Installation
 ###Install
 ```
-$ git clone -b master https://github.com/coneycode/coney-hexo-theme
+$ git clone -b master https://github.com/coneycode/coney-hexo-theme themes/coney
 ```
 **Coney requires Hexo 2.4.5 and above.** 
 ###Enable
@@ -112,6 +112,15 @@ baidu_analytics:
 ####Baidu Share
 baidu_share:
   enable: true
+   color: 4 
+####theme color 
+####ATTENTION:now hexo is not support it, if you want change color you must update stylus.see the bottom.
+theme_color: 
+    background: "#dddddd"  
+    font: "#817c7c"       
+    theme: '#ea6753'      
+    footer: "#ffffff"
+  
 baidu_search:
   enable: true
   id:   #your baidu_search_id
@@ -139,4 +148,10 @@ google_cse:
 ## ---
 
 
+```
+##Add Color support stylus version
+```
+##在博客的目录下输入下面指令
+cd node_modules/hexo-renderer-stylus 
+sudo npm install stylus@0.49.2  #根据系统文件的权限不同，有的不需要加sudo,这里默认没有写权限，需要用管理员权限执行指令
 ```
