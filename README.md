@@ -22,7 +22,7 @@ theme = coney
 ```
 ###Update
 ```
-cd themes/coney-hexo-theme
+cd themes/coney
 git pull origin master
 ```
 
