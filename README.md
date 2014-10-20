@@ -12,7 +12,7 @@ you can star my porject to get information while I update the theme.
 ##Installation
 ###Install
 ```
-$ git clone -b master https://github.com/coneycode/coney-hexo-theme themes/coney
+$ git clone -b master https://github.com/coneycode/coney themes/coney
 ```
 **Coney requires Hexo 2.4.5 and above.** 
 ###Enable
