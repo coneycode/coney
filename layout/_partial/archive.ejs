@@ -26,9 +26,13 @@ if (page.archive){
 </div>
 <div id="main" class="archive-part clearfix">
   <div id="archive-page">
-<% page.posts.each(function(item){ %>
+<% page.posts.each(function(item){ 
+   if(item.top){ %>
   <%- partial('_partial/article', {item: item, index: true,desc: false}) %>
-<% }); %>
+<% }}); %>
+<% page.posts.each(function(item){ if(!item.top){%>
+  <%- partial('_partial/article', {item: item, index: true,desc: false}) %>
+<%   }}); %>
 <% if (page.total > 1){ %>
   <nav id="page-nav" class="clearfix archive-nav">
     <%- paginator({

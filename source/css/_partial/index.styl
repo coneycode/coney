@@ -41,6 +41,15 @@
         margin 0.5em 0
         font-size 0.5em
 
+#archive-page
+  section.post
+    a
+      font-size 0.9em
+      padding 0.5em !important
+      time
+        @media mini
+          padding-left 1em
+          
 .moveMain
   margin-left 10% !important
 
@@ -128,12 +137,18 @@
     float right
     margin-left 2% !important
   section.post
+    float: left
     width 100%
-    @media mini
-      float left
-      width 50%
-    @media tablet
-      width 33.333%
+    time
+      font-size 1.1em !important
+      @media phonemax
+        float: left
+        width 100%
+      @media tablet
+        float: left
+        width 20%
+      @media mini
+        width 20%
 
 .archive-nav
   @media mini

@@ -1,7 +1,11 @@
 <div id="main">
-<% page.posts.each(function(item){ %>
+<% page.posts.each(function(item){ 
+ if(item.top){ %>
   <%- partial('_partial/article', {item: item, index: true,desc: true}) %>
-<% }); %>
+<% }}); %>
+<% page.posts.each(function(item){ if(!item.top){%>
+  <%- partial('_partial/article', {item: item, index: true,desc: true}) %>
+<%   }}); %>
 <% if (page.total > 1){ %>
   <nav id="page-nav" class="clearfix">
     <%- paginator({

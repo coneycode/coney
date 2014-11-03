@@ -4,6 +4,7 @@
   <% } else{ %>
     <a href="<%- config.root %><%- item.path %>" title="<%= item.title %>" itemprop="url">
   <% } %>
+      <time datetime="<%= date_xml(item.date) %>" itemprop="datePublished"><%= item.date.format(config.date_format) %></time>
     <h1 itemprop="name"><%= item.title %></h1>
     <% if (desc){ %>
      <% if(item.description){ %>
@@ -14,6 +15,5 @@
            <p itemprop="description" ><%= strip_html(item.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 140) %></p>
         <% } %>
     <% } %>
-    <time datetime="<%= date_xml(item.date) %>" itemprop="datePublished"><%= item.date.format(config.date_format) %></time>
   </a>
 </section>
