@@ -90,7 +90,7 @@ theme_color:
     background: "#dddddd"
     font: "#817c7c"
     theme: '#ea6753'
-    footer: "#817c7c"
+    footer: "#ddd"
  ####Baidu search 
 baidu_search:
   enable: true
