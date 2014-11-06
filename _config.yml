@@ -95,7 +95,7 @@ theme_color:
 baidu_search:
   enable: true
   id: 
-  site: http://search.baidu.com/cse/search  #your can change your site instead the default site
+  site: http://zhannei.baidu.com/cse/search  #your can change your site instead the default site
 
 google_analytics:
   enable: true
