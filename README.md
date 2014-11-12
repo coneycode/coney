@@ -7,7 +7,7 @@ you can star my porject to get information while I update the theme.
 
 [Demo](http://gengbiao.me/coney)
 
-中文说明地址点[这里](http://gengbiao.me/2014/10/13/coney%E4%B8%BB%E9%A2%98%E4%BB%8B%E7%BB%8D/)
+中文说明地址点[这里](http://gengbiao.me/article/coney%E4%B8%BB%E9%A2%98%E4%BB%8B%E7%BB%8D/)
 
 ##Installation
 ###Install
