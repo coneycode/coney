@@ -8,7 +8,8 @@ you can star my porject to get information while I update the theme.
 [Demo](http://gengbiao.me/coney)
 
 中文说明地址点[这里](http://gengbiao.me/hexo/coney%E4%B8%BB%E9%A2%98%E4%BB%8B%E7%BB%8D/)
-**声明： 本主题遵循MIT开源协议，可自由更改。去掉最下面的那行版权声明我也没有意见，但是请某些人注意点，你去掉也就算了，你改成你自己的名字算怎么回事？你要真改成你自己的，你起码改改啊。随便调两行css也是跪了**
+
+**声明： 本主题遵循MIT开源协议，可自由更改。去掉最下面的那行版权声明我也没有意见，但是请某些人注意点，你去掉也就算了，你改成你自己的名字算怎么回事？你要真改成你自己的，你起码改改啊。**
 ##Installation
 ###Install
 ```
