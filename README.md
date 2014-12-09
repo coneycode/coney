@@ -8,7 +8,7 @@ you can star my porject to get information while I update the theme.
 [Demo](http://gengbiao.me/coney)
 
 中文说明地址点[这里](http://gengbiao.me/hexo/coney%E4%B8%BB%E9%A2%98%E4%BB%8B%E7%BB%8D/)
-
+**声明： 本主题遵循MIT开源协议，可自由更改。去掉最下面的那行版权声明我也没有意见，但是请某些人注意点，你去掉也就算了，你改成你自己的名字算怎么回事？你要真改成你自己的，你起码改改啊。随便调两行css也是跪了**
 ##Installation
 ###Install
 ```
@@ -151,7 +151,9 @@ google_cse:
 ```
 ##Add Color support stylus version
 ```
+##under the blog path/
 ##在博客的目录下输入下面指令
 cd node_modules/hexo-renderer-stylus 
-sudo npm install stylus@0.49.2  #根据系统文件的权限不同，有的不需要加sudo,这里默认没有写权限，需要用管理员权限执行指令
+sudo npm install stylus@0.49.2  
+##Maybe you should sudo + command, maybe not./ ##根据系统文件的权限不同，有的不需要加sudo,这里默认没有写权限，需要用管理员权限执行指令
 ```
