@@ -12,6 +12,7 @@ archive_a: 归档
 archive_b: 归档：%s
 page: 第 %d 页
 recent_posts: 近期文章
+recent_comments: 近期评论
 menu: 菜单
 links: 友情链接
 rss: RSS 订阅
