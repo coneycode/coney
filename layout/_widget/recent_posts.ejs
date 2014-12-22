@@ -1,0 +1,12 @@
+<% if (site.posts.length){ %>
+<div class="categorieslist">
+<p class="asidetitle"><%= __('recent_posts') %></p>
+  <ul class="entry">
+    <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
+      <li>
+        <a href="<%= config.root %><%= post.path %>"><%= post.title %></a>
+      </li>
+    <% }); %>
+  </ul>
+</div>
+<% } %>
