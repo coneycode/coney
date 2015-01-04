@@ -1,5 +1,9 @@
 <% if (theme.duoshuo.enable && page.comments){ %>
 <section class="comment">
+	<% if (page.slug){ %>
 	<div class="ds-thread" data-title="<%= page.title %>" data-thread-key="<%= page.slug %>" data-author-key="<%= page.author ? page.author : config.author %>" data-url="<%- config.url %>/post/<%- page.slug %>"></div>
+	<% } else{%>
+	<div class="ds-thread"></div>
+	<% } %>
 </section>
 <% } %>
