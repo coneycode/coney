@@ -1,7 +1,7 @@
-<% if (site.posts.length){ %>
-<div class="widget">
+<% if (theme.duoshuo.enable && theme.duoshuo.short_name.length) { %>
+<div class="commentslist">
   <p class="asidetitle"><%= __('recent_comments') %></p>
-    
-<ul class="entry ds-recent-comments" data-num-items="8" data-show-avatars="0" data-show-time="1" data-show-admin="0" data-excerpt-length="70"></ul>
+  <ul class="ds-recent-comments" data-num-items="5" data-show-avatars="0" data-show-time="1" data-show-admin="0" data-excerpt-length="32" data-show-title="1"></ul>
 </div>
+
 <% } %>
