@@ -1,7 +1,9 @@
 ##### Menu
 menu:
-  首页: /
+  关于: /about
+  留言: /guestbook
   归档: /archives
+  历史: /history
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
 ## set `front-matter`as
@@ -57,13 +59,13 @@ fancybox: false
 
 #### Author information
 author:
-  google_plus:    ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998
   weibo:      ## e.g. 436062867 for http://weibo.com/436062867
-  twitter:    ## e.g. gengbiaosky for https://twitter.com/yangjiansky
+  twitter:    ## e.g. gengbiaosky for https://twitter.com/gengbiaosky
   github:     ## e.g. coneycode for https://github.com/coneycode
-  facebook:   ## e.g. gengbiao for https://favebook.com/yangjian
-  tsina:      ## e.g. 1664838973  Your weibo ID,It will be used in share button.
-  zhihu:     # coneylife, now it is no icon, I have push an issue to Font Awesome.
+  facebook:  ## e.g. gengbiao for https://www.facebook.com/gengbiao
+  instagram:  ## e.g. coney for htp://instagram.com/coney
+  emailme:    ## e.g. tufu9441@gmail.com for mailto:tufu9441@gmail.com
+  rsslink:    ## e.g. haomwei.com/atom.xml for http://haomwei.com/atom.xml
 
 #### Comment
 duoshuo: 
