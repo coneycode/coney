@@ -17,7 +17,6 @@ widgets:
 - recent_comments
 - links
 ## provide seven widgets:category,tag,rss,archive,tagcloud,links,recent_comments
-## modify links in `/layout/_widget/links.ejs`.
 
 #### RSS
 rss:  atom.xml ## RSS address.
@@ -70,6 +69,11 @@ author:
 duoshuo: 
   enable: true  ## duoshuo.com
   short_name:  ## e.g. coney,duoshuo short name.
+  
+#### Links
+links:
+  码农圈: https://coderq.com,一个面向程序员交流分享的新一代社区
+  屠城: http://haomwei.com
 
 #### Share button
 jiathis:
