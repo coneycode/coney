@@ -2,14 +2,11 @@
 <html <% if (config.language) { %>lang="<%= config.language %>"<% } %>>
 <head>
   <meta charset="UTF-8">
-  <meta name="baidu_union_verify" content="d1952c66cf48912e21c18c7c581f382a">
-  <meta name="360-site-verification" content="67fbcc5a67f4c65c057315b28fa0b2c8" />
-<meta name="google-site-verification" content="2GzxQ0VtXwTSUdmGm6DzcmhTzM_I9QmzCb_pzpMzD88" />
+
   <%
   var title = page.title;
-
   if (is_archive()){
-    title = 'Archives';
+    title = '归档';
 
     if (is_month()){
       title += ': ' + page.year + '/' + page.month;
@@ -17,9 +14,9 @@
       title += ': ' + page.year;
     }
   } else if (is_category()){
-    title = 'Category: ' + page.category;
+    title = '分类: ' + page.category;
   } else if (is_tag()){
-    title = 'Tag: ' + page.tag;
+    title = '标签: ' + page.tag;
   }
   %>
     <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
@@ -27,23 +24,24 @@
     <% if (config.author){ %>
     <meta name="author" content="<%= config.author %>"><% } %>
     <% if (page.description){ %>
-    <meta name="description" itemprop="description" content="<%= page.description %>">
-    <% } else if (config.description&&(!is_post())){ %>
-    <meta name="description" content="<%= config.description %>">
-    <% } else if (page.excerpt){ %>
-    <meta name="description" content="<%= strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, '') %>">
-    <% } else if (page.content){ %>
-    <meta name="description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>">
-    <% } %>
-    <% if (page.keywords){ %><meta name="keywords" content="<%= page.keywords %>"><% } %>
-    <% if (theme.author.twitter){ %>
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="<%= theme.author.twitter %>" />
-    <meta name="twitter:title" content="<% if (title){ %><%= title %> | <% } %><%= config.title %>" />
-      <% if (page.description){ %>
-        <meta name="twitter:description" content="<%= page.description %>" />
-      <% } %>
-    <% } %>
+  <meta name="description" content="<%= page.description %>">
+  <% } else if (page.excerpt){ %>
+  <meta name="description" content="<%= strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, '').replace(/[\n,\r]/g,'') %>">
+  <% } else if (page.content){ %>
+  <meta name="description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150).replace(/[\n,\r]/g,'') %>">
+  <% } else if (config.description){ %>
+  <meta name="description" content="<%= config.description %>">
+  <% } %>
+  <% if (page.keywords){ %>
+    <meta name="keywords" content="<%= page.keywords %>">
+  <% } else if (page.tags){ %>
+  <%
+    var thistags=[];
+    page.tags.each(function(k){
+    thistags.push(k.name);
+    }) %>
+    <meta name="keywords" content="<%= thistags %>">
+  <% } %>
     <% if (theme.rss){ %>
     <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
     <% } %>
@@ -55,16 +53,5 @@
     <link rel="apple-touch-icon-precomposed" href="<%- config.root %><%- theme.apple_icon %>">
     <% } %>
     <%- css('css/style') %>
-    <% if (theme.baidu_analytics.enable){ %>
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement("script");
-            var _bdId ='<%=theme.baidu_analytics.id%>';
-             hm.src = "//hm.baidu.com/hm.js?" + _bdId;
-             var s = document.getElementsByTagName("script")[0]; 
-             s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-    <% } %> 
+    
 </head>
