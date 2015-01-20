@@ -57,6 +57,7 @@ fancybox: false
 
 #### Author information
 author:
+  google_plus: ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998,不会展示,但填写后文章作者链接会指向google plus
   weibo:      ## e.g. 436062867 for http://weibo.com/436062867
   twitter:    ## e.g. gengbiaosky for https://twitter.com/gengbiaosky
   github:     ## e.g. coneycode for https://github.com/coneycode
