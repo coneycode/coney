@@ -94,7 +94,7 @@ theme_color:
  ####Baidu search 
 baidu_search:
   enable: true
-  id: 
+  id: ##百度站内搜索网站id通常不能正确传递给layout/_partial/header.ejs,需要手动修改该文件line 28中input name的value
   site: http://zhannei.baidu.com/cse/search  #your can change your site instead the default site
 
 google_analytics:
