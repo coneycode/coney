@@ -60,11 +60,11 @@
     width 45%
     float left
     margin 0 5% 0 0
-  @media tablet 
+  @media tablet
     width 100%
     float none
     margin 1em 0 0
-  li 
+  li
     border-bottom 1px solid color-gray
     a
       display block
@@ -79,7 +79,7 @@
     width 45%
     float left
     margin 0 5% 0 0
-  @media tablet 
+  @media tablet
     width 100%
     float none
     margin 1em 0 0
@@ -104,7 +104,7 @@
     float left
     width 45%
     margin 0 5% 0 0
-  @media tablet 
+  @media tablet
     width 100%
     float none
     margin 1em 0 0
@@ -128,11 +128,11 @@
     width 45%
     float left
     margin 0 5% 0 0
-  @media tablet 
+  @media tablet
     width 100%
     float none
     margin 1em 0 0
-  li 
+  li
     font-size 0.8em
     line-height 2em
     a
@@ -145,13 +145,13 @@
       content "("
     &:after
       content ")"
-          
-.archive-list 
-  padding 0.5em 0 
 
-.archive-float 
+.archive-list
+  padding 0.5em 0
+
+.archive-float
   ul
-    padding 0 
+    padding 0
   li
     float left
     margin 0.3em
@@ -164,7 +164,7 @@
     width 45%
     float left
     margin 0 5% 0 0
-  @media tablet 
+  @media tablet
     width 100%
     float none
     margin 1em 0 0
@@ -179,12 +179,12 @@
 
 //links
 .linkslist
-  margin-top 0.5em 
+  margin-top 0.5em
   @media mini
     width 45%
     float left
     margin 0 5% 0 0
-  @media tablet 
+  @media tablet
     width 100%
     float none
     margin 1em 0 0
@@ -202,7 +202,7 @@
 
 #authorInfo
   overflow hidden
-  text-align center 
+  text-align center
   padding-top 2em
   margin-bottom 1.5em
   border-bottom 1px solid color-gray
@@ -225,7 +225,7 @@
   if dataURI
     background no-repeat url(author-img-data) left top
   else
-    background no-repeat url(root+author-img) left top 
+    background no-repeat url(root+author-img) left top
   background-size w w
   border-radius (w/2)
   transition transform 2s ease-out
@@ -277,14 +277,14 @@
     margin 0.5em
     @media mini
       float none
-      margin 0 
+      margin 0
       padding 0.3em
     @media tablet
       float none
       padding 0.3em
     &:hover:before
       color color-blue
-    &[title="weibo"]::before,&[title="twitter"]::before,&[title="github"]::before,&[title="facebook"]::before,&[title="zhihu"]::before
+    &[title="weibo"]::before,&[title="twitter"]::before,&[title="github"]::before,&[title="facebook"]::before,&[title="instagram"]::before,&[title="emailme"]::before,&[title="rsslink"]::before
       font-family font-icon-family
       font-smoothing()
     &[title="weibo"]::before
@@ -295,40 +295,41 @@
       content "\f09b"
     &[title="facebook"]::before
       content "\f09a"
-    &[title="zhihu"]::before
-      content: "\f1d6";
- 
+    &[title="instagram"]::before
+      content: "\f16d"
+    &[title="emailme"]::before
+      content: "\f003"
+    &[title="rsslink"]::before
+      content: "\f09e"
 
-//back-top
-#back-top 
-  display  block
-  width  30px
-  height  30px
-  background  transparent
-  border  6px solid rgb(0, 0, 0)
-  border  6px solid rgba(0, 0, 0, 0.5)
-  border-radius  100%
-  position fixed
-  right 5px
-  bottom 20px
-  span
-    display block
-    width 0
-    height 0
-    border-top  10px solid transparent
-    border-right  10px solid transparent
-    border-bottom  10px solid rgb(0, 0, 0)
-    border-bottom  10px solid rgba(0, 0, 0, 0.5)
-    border-left  10px solid transparent
-    text-indent  -99999px
-    margin  -2px auto 0
-    -webkit-transition all 0.4s ease-in-out 0s
-    -moz-transition all 0.4s ease-in-out 0s
-    -o-transition all 0.4s ease-in-out 0s
-    transition all 0.4s ease-in-out 0s
-  &:hover
-    border  6px solid rgba(0, 0, 0, 1)
-  &:hover span 
-    border-bottom  10px solid rgba(0, 0, 0, 1)
-  
 
+//recent_comments
+
+.commentslist
+  margin-top 0.5em
+  @media mini
+    width 45%
+    float left
+    margin 0 5% 0 0
+  @media tablet
+    width 100%
+    float none
+    margin 1em 0 0
+  ul
+    padding 0.5em 0
+    a
+      font-size 1em
+      line-height line-height
+      display block
+      padding 0
+      &:hover
+        color color-theme
+        transition color .25s
+
+.ds-excerpt
+  font-size 1.1em
+  color color-grey
+
+.ds-recent-comments
+  margin-top -0.6em
+  margin-left 0.3em
