@@ -12,7 +12,6 @@
     <% } %></p>
   <p class="article-time">
     <time datetime="<%= date_xml(item.date) %>" itemprop="datePublished"><%= item.date.format(config.date_format) %></time>
-    <% if (item.updated!=null) { %><%= __('updated') %>:<time datetime="<%= date_xml(item.updated) %>" itemprop="dateModified"><%= item.updated.format(config.date_format) %></time>
-    <% } %>
+    
   </p>
 </header>
