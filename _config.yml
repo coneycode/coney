@@ -3,7 +3,6 @@ menu:
   关于: /about
   留言: /guestbook
   归档: /archives
-  历史: /history
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
 ## set `front-matter`as
@@ -15,10 +14,9 @@ menu:
 widgets: 
 - category
 - tag
+- recent_comments
 - links
-- rss
-- tagcloud
-## provide six widgets:category,tag,rss,archive,tagcloud,links.
+## provide seven widgets:category,tag,rss,archive,tagcloud,links,recent_comments
 ## modify links in `/layout/_widget/links.ejs`.
 
 #### RSS
