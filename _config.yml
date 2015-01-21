@@ -60,7 +60,7 @@ author:
   weibo:      ## e.g. 436062867 for http://weibo.com/436062867
   twitter:    ## e.g. gengbiaosky for https://twitter.com/gengbiaosky
   github:     ## e.g. coneycode for https://github.com/coneycode
-  facebook:  ## e.g. gengbiao for https://www.facebook.com/gengbiao
+  facebook:   ## e.g. gengbiao for https://www.facebook.com/gengbiao
   instagram:  ## e.g. coney for htp://instagram.com/coney
   emailme:    ## e.g. tufu9441@gmail.com for mailto:tufu9441@gmail.com
   rsslink:    ## e.g. haomwei.com/atom.xml for http://haomwei.com/atom.xml
@@ -84,7 +84,7 @@ jiathis:
 ####Baidu Analytics
 baidu_analytics:
   enable: true
-  id: 391982416296a0d54221f59fe35250d4 # your baidu analytics id
+  id:  # your baidu analytics id
 
 ####Baidu Share
 baidu_share:
