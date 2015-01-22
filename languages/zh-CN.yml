@@ -1,4 +1,7 @@
 home: 首页
+about: 关于
+guestbook: 留言
+history: 历史
 archives: 归档
 categories: 分类
 search: 搜索
@@ -18,4 +21,6 @@ links: 友情链接
 rss: RSS 订阅
 showsidebar: 显示侧边栏
 hidesidebar: 隐藏侧边栏
-updated: 更新日期
+updated: 更新于
+nextpost: 下一篇
+prevpost: 上一篇
