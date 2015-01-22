@@ -21,7 +21,10 @@
   title = '第'+page.current+'页';
   }
   %>
-    <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+  
+    <title><% if (title){ %><%= title %> | <%= config.title %><% }
+               else { %><%= config.title %> | <%= config.subtitle %><% } %>
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     <% if (config.author){ %>
     <meta name="author" content="<%= config.author %>"><% } %>
