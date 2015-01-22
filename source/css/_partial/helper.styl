@@ -20,7 +20,7 @@ footer.article-footer
     width 1em
     margin-right 0.5em
     position relative
-    color lighten(color-gray,20%)
+    color color-font
     &:before
       font-family font-icon-family
       content "\f064"
@@ -138,7 +138,7 @@ footer.article-footer
     width 30%
 
 .article-tags
-  color lighten(color-gray,20%)
+  color color-font
   span
     position relative
     float left
@@ -160,13 +160,13 @@ footer.article-footer
       background lighten(color-gray, 50%)
 
 .article-categories
-  color lighten(color-gray,20%)
+  color color-font
   margin-top 0.3em
   span
     &:before
       font-family font-icon-family
       font-smoothing()
-      content "\f07b"
+      content "\f07c"
 
 .article-category-link
   padding 0.5em
@@ -188,8 +188,8 @@ footer.article-footer
   .prev,.next
     a
       &:hover
-        background color-blue
-        color color-white
+        background lighten(color-gray,30%)
+        color color-theme
   .prev
     width 100%
     float left
