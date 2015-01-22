@@ -3,24 +3,6 @@
 <head>
   <meta charset="UTF-8">
 
-<!--gitcafe二级域名跳转js加载开始 -->
-  <script>
-  function a() {
-    var webAddress = location.href;
-    if (webAddress == "http://tufu9441.gitcafe.com/")
-    {
-      document.location.href = "http://haomwei.com/"
-    }
-    else if  (webAddress == "http://tufu9441.gitcafe.io/")
-    {
-      document.location.href = "http://haomwei.com/"
-    }
-
-  }
-  window.onload = a;
-</script>
-<!--域名跳转js加载结束 -->
-
   <%
   var title = page.title;
   if (is_archive()){
