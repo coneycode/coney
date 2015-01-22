@@ -3,7 +3,7 @@ footer.article-footer
   padding 0 4%
   margin 0
   border-top 1px solid lighten(color-gray,30%)
-  
+
 //share
 .article-share
   float right
@@ -12,8 +12,8 @@ footer.article-footer
     width 60%
   @media mini
     width 40%
-  
-.share 
+
+.share
   span
     float right
     height 3em
@@ -42,7 +42,7 @@ footer.article-footer
       absolute-center(1.5em)
     &:hover:before
       color color-white
-  
+
 .article-share-twitter
   &:before
     content "\f099"
@@ -94,7 +94,7 @@ footer.article-footer
   @media tablet
     absolute-center(20em)
     position fixed
-  span 
+  span
     display block
     width 80%
     height 1.5em
@@ -138,7 +138,7 @@ footer.article-footer
     width 30%
 
 .article-tags
-  color lighten(color-gray,20%) 
+  color lighten(color-gray,20%)
   span
     position relative
     float left
@@ -154,11 +154,11 @@ footer.article-footer
     float left
     padding 0 0.3em
     margin 0.3em
-    background lighten(color-gray,50%)
+    background lighten(color-gray,30%)
     &:hover
-      color color-white
-      background color-blue
-  
+      color color-theme
+      background lighten(color-gray, 50%)
+
 .article-categories
   color lighten(color-gray,20%)
   margin-top 0.3em
@@ -172,8 +172,8 @@ footer.article-footer
   padding 0.5em
   margin 0 0.3em
   &:hover
-    color color-white !important
-    background color-blue
+    color color-theme
+    background lighten(color-gray,30%)
 
 //page nav
 .article-nav
@@ -246,10 +246,10 @@ section.comment
   font-size 0.8em
   float right
   .toc
-    padding 0 
+    padding 0
     li
       list-style-type none
-  .toc-child 
+  .toc-child
     padding-left 1.5em
 
 #toc.toc-aside
