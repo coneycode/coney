@@ -3,6 +3,24 @@
 <head>
   <meta charset="UTF-8">
 
+<!--gitcafe二级域名跳转js加载开始 -->
+  <script>
+  function a() {
+    var webAddress = location.href;
+    if (webAddress == "http://tufu9441.gitcafe.com/")
+    {
+      document.location.href = "http://haomwei.com/"
+    }
+    else if  (webAddress == "http://tufu9441.gitcafe.io/")
+    {
+      document.location.href = "http://haomwei.com/"
+    }
+
+  }
+  window.onload = a;
+</script>
+<!--域名跳转js加载结束 -->
+
   <%
   var title = page.title;
   if (is_archive()){
@@ -17,6 +35,8 @@
     title = '分类: ' + page.category;
   } else if (is_tag()){
     title = '标签: ' + page.tag;
+  } else if(page.current > 1){
+  title = '第'+page.current+'页';
   }
   %>
     <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
@@ -53,5 +73,5 @@
     <link rel="apple-touch-icon-precomposed" href="<%- config.root %><%- theme.apple_icon %>">
     <% } %>
     <%- css('css/style') %>
-    
+
 </head>
