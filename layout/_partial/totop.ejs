@@ -1,4 +1,59 @@
-<div id="totop">
-	<a title="返回顶部"></a>
-</div>
+<a id="rocket" href="#top" title="返回顶部" class="show"><i></i></a>
 	<script src="<%- config.root %>js/totop.js"></script>
+<style>
+#rocket {
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	display: block;
+	visibility: hidden;
+	width: 26px;
+	height: 48px;
+	background: url("data:image/png;base64,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") no-repeat 50% 0;
+	opacity: 0;
+	-webkit-transition: visibility .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), -webkit-transform .6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+	-moz-transition: visibility .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), -moz-transform .6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+	transition: visibility .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), transform .6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+#rocket i {
+	display: block;
+	margin-top: 48px;
+	height: 14px;
+	background: url("data:image/png;base64,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") no-repeat 50% -48px;
+	opacity: .5;
+	-webkit-transition: -webkit-transform .2s;
+	-moz-transition: -moz-transform .2s;
+	transition: transform .2s;
+	-webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+}
+#rocket:hover {
+	background-position: 50% -62px;
+}
+#rocket:hover i {
+	background-position: 50% 100%;
+	-webkit-animation: flaming .7s infinite;
+	-moz-animation: flaming .7s infinite;
+	animation: flaming .7s infinite;
+}
+#rocket.show {
+	visibility: visible;
+	opacity: 1;
+}
+#rocket.launch {
+	background-position: 50% -62px;
+	opacity: 0;
+	-webkit-transform: translateY(-500px);
+	-moz-transform: translateY(-500px);
+	-ms-transform: translateY(-500px);
+	transform: translateY(-500px);
+	pointer-events: none;
+}
+#rocket.launch i {
+	background-position: 50% 100%;
+	-webkit-transform: scale(1.4, 3.2);
+	-moz-transform: scale(1.4, 3.2);
+	transform: scale(1.4, 3.2);
+}
+</style>
