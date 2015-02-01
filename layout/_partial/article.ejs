@@ -14,11 +14,11 @@
 
     <% if (desc){ %>
      <% if(item.description){ %>
-      <p itemprop="description" ><%- item.description %></p>
+      <p itemprop="description" ><%- item.description %>p class="article-more-link"><span>阅读更多</span></p></p>
       <% } else if(item.excerpt){ %>
-       <p itemprop="description" ><%= strip_html(item.excerpt).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 300) %>......<p class="article-more-link"><span style="color:#ea6753;">阅读更多</span></p></p>
+       <p itemprop="description" ><%= strip_html(item.excerpt).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 300) %>......<p class="article-more-link"><span>阅读更多</span></p></p>
       <% } else {%>
-           <p itemprop="description" ><%= strip_html(item.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 300) %>......<p class="article-more-link"><span style="color:#ea6753;">阅读更多</span></p></p>
+           <p itemprop="description" ><%= strip_html(item.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 300) %>......<p class="article-more-link"><span>阅读更多</span></p></p>
         <% } %>
     <% } %>
   </a>
