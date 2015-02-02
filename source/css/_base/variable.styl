@@ -11,8 +11,11 @@ if(font is a 'rgba')
 else
   color-font = #817c7c
 
-color-white = #ffffff
-color-blue = #17365d
+theme = convert(hexo-config("theme_color.title"))
+if(title is a 'rgba')
+  color-title = title
+else
+  color-title = #2ca6cb
 
 theme = convert(hexo-config("theme_color.theme"))
 if(theme is a 'rgba')
@@ -20,15 +23,9 @@ if(theme is a 'rgba')
 else
   color-theme = #ea6753
 
+color-white = #ffffff
 color-font-nav =#E9CD4C
 color-section = #fafafa
-
-footer = convert(hexo-config("theme_color.footer"))
-if(footer is a 'rgba')
-  color-footer = footer
-else
-  color-footer = #ddd
-
 color-gray = #CCC
 color-heading = #333333
 color-code = #eee
