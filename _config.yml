@@ -93,10 +93,10 @@ baidu_share:
 
 ####主题颜色
 theme_color:
-    background: "#dddddd"
-    font: "#817c7c"
-    theme: '#ea6753'
-    footer: "#ddd"
+    background: '#dddddd'
+    font: '#817c7c'
+    theme: '#8db3e2'
+    title: '#17365d'
 
 ####百度站内搜索
 baidu_search:
