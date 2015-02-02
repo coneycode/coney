@@ -21,7 +21,7 @@
   a
     color color-theme
     &:hover
-      color color-blue
+      color color-title
     &::before
       font-family font-icon-family
       font-smoothing()
@@ -45,11 +45,11 @@
 
 .asidetitle
   font-size 1.1em
-  color color-blue
+  color color-title
   padding 0 0 0.3125em 0
   border-bottom 0.1875em solid color-gray
   a
-    color color-blue
+    color color-title
     &:hover
       color color-theme
       transition color .5s
@@ -229,8 +229,6 @@
   background-size w w
   border-radius (w/2)
   transition transform 2s ease-out
-  &:hover
-    transform rotateZ(360deg)
   @media mini
     margin 0 1em 0 0
     float left
@@ -271,7 +269,7 @@
     padding 0
   a
     display inline-block
-    color color-blue
+    color #343434
     font-size font-size+80
     margin 0.5em
     @media mini
