@@ -74,5 +74,15 @@
     <link rel="apple-touch-icon-precomposed" href="<%- config.root %><%- theme.apple_icon %>">
     <% } %>
     <%- css('css/style') %>
-
+    <% if (theme.baidu_analytics.enable){ %>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?2f<%=theme.baidu_analytics.id%>";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <% } %> 
 </head>
