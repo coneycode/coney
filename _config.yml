@@ -16,7 +16,7 @@ widgets:
 - tag
 - recent_comments
 - links
-## provide seven widgets:category,tag,rss,archive,tagcloud,links,recent_comments
+## provide seven widgets: category,tag,rss,archive,tagcloud,links,recent_comments
 
 #### RSS
 rss:  atom.xml ## RSS address.
@@ -56,14 +56,14 @@ fancybox: true
 
 #### Author information
 author:
-  google_plus: ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998,不会展示,但填写后文章作者链接会指向google plus
-  weibo:      ## e.g. 436062867 for http://weibo.com/436062867
-  twitter:    ## e.g. gengbiaosky for https://twitter.com/gengbiaosky
-  github:     ## e.g. coneycode for https://github.com/coneycode
-  facebook:   ## e.g. gengbiao for https://www.facebook.com/gengbiao
-  instagram:  ## e.g. coney for htp://instagram.com/coney
-  emailme:    ## e.g. tufu9441@gmail.com for mailto:tufu9441@gmail.com
-  rsslink:    ## e.g. haomwei.com/atom.xml for http://haomwei.com/atom.xml
+  google_plus: ## e.g. 116338260303228776998 for https://plus.google.com/u/0/116338260303228776998,不会展示,但填写后文章作者链接会指向google plus
+  weibo:       ## e.g. 436062867 for http://weibo.com/436062867
+  twitter:     ## e.g. gengbiaosky for https://twitter.com/gengbiaosky
+  github:      ## e.g. coneycode for https://github.com/coneycode
+  facebook:    ## e.g. gengbiao for https://www.facebook.com/gengbiao
+  instagram:   ## e.g. coney for htp://instagram.com/coney
+  emailme:     ## e.g. tufu9441@gmail.com for mailto:tufu9441@gmail.com
+  rsslink:     ## e.g. haomwei.com/atom.xml for http://haomwei.com/atom.xml
 
 #### Comment
 duoshuo: 
@@ -127,7 +127,7 @@ google_cse:
 ## title: search
 ## ---
 
-#### Swiftype Search
+#### Swiftype自定义搜索
 swift_search:
   enable: true
   id:  ## e.g. m7b11ZrsT8Me7gzApciT
