@@ -54,7 +54,7 @@ fancybox: true
 ## if you want use fancybox in ANY post please copy the file `fancybox.js`.
 ## in theme folder `/coney/scripts` to your hexo blog folder `../scritps`.
 
-#### Author information
+#### 作者信息
 author:
   google_plus: ## e.g. 116338260303228776998 for https://plus.google.com/u/0/116338260303228776998,不会展示,但填写后文章作者链接会指向google plus
   weibo:       ## e.g. 436062867 for http://weibo.com/436062867
@@ -65,12 +65,12 @@ author:
   emailme:     ## e.g. tufu9441@gmail.com for mailto:tufu9441@gmail.com
   rsslink:     ## e.g. haomwei.com/atom.xml for http://haomwei.com/atom.xml
 
-#### Comment
+#### 多说评论系统
 duoshuo: 
   enable: true  ## duoshuo.com
   short_name:  ## e.g. coney,duoshuo short name.
   
-#### Links
+#### 友情链接
 links:
   码农圈: https://coderq.com,一个面向程序员交流分享的新一代社区
   屠城: http://haomwei.com
@@ -131,3 +131,9 @@ google_cse:
 swiftype_search:
   enable: true
   id:  ## e.g. m7b11ZrsT8Me7gzApciT
+  
+#### 代码高亮
+highlight:
+  enable: true
+  line_number: true
+  tab_replace:
