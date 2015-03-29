@@ -1,7 +1,27 @@
-<% if(theme.swift_search.enable) { %>
-<div  id="container" class="page">
-  <div id="st-results-container" style="width:80%">正在加载搜索结果，请稍等。</div>
-  <style>.st-result-text {
+<% if(theme.google_cse.enable) { %>
+<div  id="main" class="page">
+  <div id='cse' style='width:100%;text-align:center'>正在加载Google搜索结果，请稍等。</div>
+</div>
+<script src="http://www.google.com.hk/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+google.load('search', '1', {language : 'zh-CN',style: google.loader.themes.MINIMALIST});
+google.setOnLoadCallback(function(){
+  var customSearchControl = new google.search.CustomSearchControl('<%= theme.google_cse.cx %>');
+  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.setAutoComplete(true);
+  customSearchControl.draw('cse', options);
+  var match = location.search.match(/q=([^&]*)(&|$)/);
+  if(match && match[1]){
+    var search = decodeURIComponent(match[1]); 
+    customSearchControl.execute(search);
+  }
+},true);
+</script>
+<% } else if(theme.swiftype_search.enable) { %>
+<div id="st-results-container" style='width:80%'>正在加载搜索结果，请稍等。</div>
+<style>
+.st-result-text {
   background: #fafafa;
   display: block;
   border-left: 0.5em solid #ccc;
@@ -21,34 +41,13 @@
   border-left: 0.5em solid #8db3e2;
 }
 .st-result-text h3 a{
-  color: color-title;
+  color: #17365d;
   line-height: 1.5;
   font-size: 22px;
 }
 .st-snippet em {
   font-weight: bold;
   color: #8db3e2;
-}</style>
-<% } %>
-
-<% if(theme.google_cse.enable) { %>
-<div  id="main" class="page">
-  <div id='cse' style='width:100%;text-align:center'>正在加载搜索结果，请稍等。</div>
-</div>
-<script src="http://www.google.com.hk/jsapi" type="text/javascript"></script>
-<script type="text/javascript">
-google.load('search', '1', {language : 'zh-CN',style: google.loader.themes.MINIMALIST});
-google.setOnLoadCallback(function(){
-  var customSearchControl = new google.search.CustomSearchControl('<%= theme.google_cse.cx %>');
-  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-  var options = new google.search.DrawOptions();
-  options.setAutoComplete(true);
-  customSearchControl.draw('cse', options);
-  var match = location.search.match(/q=([^&]*)(&|$)/);
-  if(match && match[1]){
-    var search = decodeURIComponent(match[1]); 
-    customSearchControl.execute(search);
-  }
-},true);
-</script>
+}
+</style>
 <% } %>
