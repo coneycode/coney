@@ -81,30 +81,30 @@ jiathis:
   id:    ## e.g. 1501277 your jiathis ID. 
   tsina: ## e.g. 1664838973 Your weibo id,It will be used in share button.
 
-####百度统计代码
+#### 百度统计代码
 baidu_analytics:
   enable: true
   id:  # your baidu analytics id
 
-####百度分享
+#### 百度分享
 baidu_share:
   enable: true
   color: 4
 
-####主题颜色
+#### 主题颜色
 theme_color:
     background: '#dddddd'
     font: '#817c7c'
     theme: '#8db3e2'
     title: '#17365d'
 
-####百度站内搜索
+#### 百度站内搜索
 baidu_search:
   enable: true
   id:   ## e.g. "783281470518440642"  for your baidu search id
   site: http://zhannei.baidu.com/cse/search  #your can change your site instead the default site
 
-####Google分析代码
+#### Google分析代码
 google_analytics:
   enable: true
   id:   ## e.g. UA-55273525-1 your google analytics ID.
@@ -112,7 +112,7 @@ google_analytics:
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 
-####背景音乐 
+#### 背景音乐 
 background_music:
   enable: false
   src: 
@@ -127,3 +127,7 @@ google_cse:
 ## title: search
 ## ---
 
+#### Swiftype Search
+swift_search:
+  enable: true
+  id:  ## e.g. m7b11ZrsT8Me7gzApciT
