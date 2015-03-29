@@ -127,7 +127,7 @@ google_cse:
 ## title: search
 ## ---
 
-#### Swiftype自定义搜索
-swift_search:
+#### Swiftype站内搜索
+swiftype_search:
   enable: true
   id:  ## e.g. m7b11ZrsT8Me7gzApciT
