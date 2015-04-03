@@ -129,8 +129,13 @@ google_cse:
 
 #### Swiftype站内搜索
 swiftype_search:
-  enable: true
-  id:  ## e.g. m7b11ZrsT8Me7gzApciT
+  enable: false
+  id:  ## e.g. m7b11ZrsT8Me7gzApciT for your swiftype search id
+  
+#### Tinysou站内搜索
+tinysou_search:
+  enable: false
+  id:  ## e.g. 4ac092ad8d749fdc6293 for your tinysou search id
   
 #### 代码高亮
 highlight:
