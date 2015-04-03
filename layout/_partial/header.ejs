@@ -30,8 +30,13 @@
                                         <% } else if(theme.swiftype_search&&theme.swiftype_search.enable){ %>
 				        <form class="search" action="<%- config.root %>search.html" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="text" id="st-search-input" maxlength="20" placeholder="Search" />
+						<input type="text" id="st-search-input" maxlength="20" placeholder="<%= __('search') %>" />
 				        </form>
+					<% } else if(theme.tinysou_search&&theme.tinysou_search.enable){ %>
+					<form class="search">
+						<label>Search</label>
+						<input type="text" id="ts-search-input" name="q" size="30" placeholder="<%= __('search') %>"><br>
+					</form>
 					<% } else { %>
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
