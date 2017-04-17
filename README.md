@@ -10,25 +10,25 @@ you can star my porject to get information while I update the theme.
 中文说明地址点[这里](http://gengbiao.me/hexo/coney%E4%B8%BB%E9%A2%98%E4%BB%8B%E7%BB%8D/)
 
 **声明： 本主题遵循MIT开源协议，可自由更改。去掉最下面的那行版权声明我也没有意见，但是请某些人注意点，你去掉也就算了，你改成你自己的名字算怎么回事？你要真改成你自己的，你起码改改啊。-_-!**
-##Installation
-###Install
+## Installation
+### Install
 ```
 $ git clone -b master https://github.com/coneycode/coney themes/coney
 ```
 **Coney requires Hexo 2.4.5 and above.** 
-###Enable
+### Enable
 Modify `theme` setting in blog folder` _config.yml` to `coney`.
 ```
 theme = coney
 ```
-###Update
+### Update
 ```
 cd themes/coney
 git pull origin master
 ```
 
 **please backup your `_config.yml` file before update.** 
-##Configuration
+## Configuration
 
 Modify settings in  `/themes/coney/_config.yml`.
 ```yml
@@ -150,7 +150,7 @@ google_cse:
 
 
 ```
-##Add Color support stylus version
+## Add Color support stylus version
 ```
 ##under the blog path/
 ##在博客的目录下输入下面指令
