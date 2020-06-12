@@ -151,7 +151,7 @@ google_cse:
 
 
 ```
-##Add Color support stylus version
+## Add Color support stylus version
 ```
 ##under the blog path/
 ##在博客的目录下输入下面指令
