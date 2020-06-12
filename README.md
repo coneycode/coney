@@ -12,6 +12,7 @@ you can star my porject to get information while I update the theme.
 **声明： 本主题遵循MIT开源协议，可自由更改。去掉最下面的那行版权声明我也没有意见，但是请某些人注意点，你去掉也就算了，你改成你自己的名字算怎么回事？你要真改成你自己的，你起码改改啊。-_-!**
 
 ##Installation
+
 ###Install
 ```
 $ git clone -b master https://github.com/coneycode/coney themes/coney
