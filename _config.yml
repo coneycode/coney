@@ -1,6 +1,7 @@
 ##### Menu
 menu:
-  首页: /
+  关于: /about
+  留言: /guestbook
   归档: /archives
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
@@ -13,20 +14,19 @@ menu:
 widgets: 
 - category
 - tag
+- recent_comments
 - links
-- rss
-- tagcloud
-## provide six widgets:category,tag,rss,archive,tagcloud,links.
-## modify links in `/layout/_widget/links.ejs`.
+## provide seven widgets: category,tag,rss,archive,tagcloud,links,recent_comments
 
 #### RSS
-rss:  atom.xml ## RSS address.
+rss:  /atom.xml ## RSS address.
 
 #### Image
 imglogo:
-  enable: false             ## display image logo true/false.
+  enable: false            ## display image logo true/false.
   src: img/logo.svg        ## `.svg` and `.png` are recommended,please put image into the theme folder `/coney/source/img`.
-favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/coney/source/img`.     
+favicon: favicon.ico       ## size:32px*32px,`.ico` is recommended,please put image into the hexo folder `/source`.   
+apple_icon: img/apple.jpg  ## size:114px*114px,please put image into the theme folder `/coney/source/img`.
 
 #### Author Avatar Picture
 author_img_enable: true ## display author avatar picture
@@ -44,59 +44,68 @@ ShowCustomFont: true
 
 #### Toc
 toc:
-  article: true   ## show contents in article.
-  aside: true     ## show contents in aside.
+  article: false   ## show contents in article.
+  aside: false     ## show contents in aside.
 ## you can set both of the value to true of neither of them.
 ## if you don't want display contents in a specified post,you can modify `front-matter` and add `toc: false`.
 
 #### Fancybox
-fancybox: false 
+fancybox: true 
 ## if you use gallery post or want use fancybox please set the value to true.
 ## if you want use fancybox in ANY post please copy the file `fancybox.js`.
 ## in theme folder `/coney/scripts` to your hexo blog folder `../scritps`.
 
-#### Author information
+#### 作者信息
 author:
-  google_plus:    ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998
-  weibo:      ## e.g. 436062867 for http://weibo.com/436062867
-  twitter:    ## e.g. gengbiaosky for https://twitter.com/yangjiansky
-  github:     ## e.g. coneycode for https://github.com/coneycode
-  facebook:   ## e.g. gengbiao for https://favebook.com/yangjian
-  tsina:      ## e.g. 1664838973  Your weibo ID,It will be used in share button.
-  zhihu:     # coneylife, now it is no icon, I have push an issue to Font Awesome.
+  google_plus: ## e.g. 116338260303228776998 for https://plus.google.com/u/0/116338260303228776998,不会展示,但填写后文章作者链接会指向google plus
+  weibo:       ## e.g. 436062867 for http://weibo.com/436062867
+  twitter:     ## e.g. gengbiaosky for https://twitter.com/gengbiaosky
+  github:      ## e.g. coneycode for https://github.com/coneycode
+  facebook:    ## e.g. gengbiao for https://www.facebook.com/gengbiao
+  instagram:   ## e.g. coney for htp://instagram.com/coney
+  emailme:     ## e.g. tufu9441@gmail.com for mailto:tufu9441@gmail.com
+  rsslink:     ## e.g. haomwei.com/atom.xml for http://haomwei.com/atom.xml
 
-#### Comment
+#### 多说评论系统
 duoshuo: 
   enable: true  ## duoshuo.com
   short_name:  ## e.g. coney,duoshuo short name.
+  
+#### 友情链接
+links:
+  码农圈: https://coderq.com,一个面向程序员交流分享的新一代社区
+  屠城: http://haomwei.com
 
-#### Share button
+#### Jiathis分享
 jiathis:
   enable: false ## if you use jiathis as your share tool,the built-in share tool won't be display.
   id:    ## e.g. 1501277 your jiathis ID. 
   tsina: ## e.g. 1664838973 Your weibo id,It will be used in share button.
 
-####Baidu Analytics
+#### 百度统计代码
 baidu_analytics:
   enable: true
-  id: 391982416296a0d54221f59fe35250d4 # your baidu analytics id
+  id:  # your baidu analytics id
 
-####Baidu Share
+#### 百度分享
 baidu_share:
   enable: true
   color: 4
 
+#### 主题颜色
 theme_color:
-    background: "#dddddd"
-    font: "#817c7c"
-    theme: '#ea6753'
-    footer: "#ddd"
- ####Baidu search 
+    background: '#dddddd'
+    font: '#817c7c'
+    theme: '#8db3e2'
+    title: '#17365d'
+
+#### 百度站内搜索
 baidu_search:
   enable: true
-  id: 
+  id:   ## e.g. "783281470518440642"  for your baidu search id
   site: http://zhannei.baidu.com/cse/search  #your can change your site instead the default site
 
+#### Google分析代码
 google_analytics:
   enable: true
   id:   ## e.g. UA-55273525-1 your google analytics ID.
@@ -104,11 +113,11 @@ google_analytics:
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 
-####background music 
+#### 背景音乐 
 background_music:
   enable: false
   src: 
-#### Custom Search
+#### 谷歌自定义搜索
 google_cse: 
   enable: false
   cx:   ## e.g. 010584917530731754670:91c2z8qybp0 your Custom Search ID
@@ -119,3 +128,18 @@ google_cse:
 ## title: search
 ## ---
 
+#### Swiftype站内搜索
+swiftype_search:
+  enable: false
+  id:  ## e.g. m7b11ZrsT8Me7gzApciT for your swiftype search id
+  
+#### Tinysou站内搜索
+tinysou_search:
+  enable: false
+  id:  ## e.g. 4ac092ad8d749fdc6293 for your tinysou search id
+  
+#### 代码高亮
+highlight:
+  enable: true
+  line_number: true
+  tab_replace:

@@ -1,7 +1,7 @@
 .post,.page
   background color-section
   a
-    color color-blue 
+    color color-title
     &:hover
       color color-theme
 
@@ -16,7 +16,7 @@ article
       @media tablet
         font-size font-size+100
         padding-top 0.3em
-      word-wrap break-word 
+      word-wrap break-word
       word-break normal
       font-smoothing antialiased
       border-left 5px solid color-theme
@@ -40,10 +40,11 @@ article
         font-family font-icon-family
         font-size font-size+30
         content "\f017"
-        font-smoothing()      
+        font-smoothing()
   .article-content
     padding 1.5em 4%
-    .kb      
+    color color-content
+    .kb
       padding .1em .6em
       border 1px solid color-gray
       background-color code-color
@@ -67,7 +68,7 @@ article
       margin 0.5em 0
       >code
         color darken(color-gray,20%)
-    hr 
+    hr
       border 1px solid lighten(color-gray,30%)
     strong
       font-weight bold
@@ -127,7 +128,7 @@ article
       height auto
       vertical-align middle
       padding-top 0.5em
-      @media tablet 
+      @media tablet
         padding-top 0.7em
     figcaption,.caption
       text-align center
@@ -154,7 +155,7 @@ article
         font-weight bold
         border-bottom 3px solid lighten(color-gray,30%)
         padding-bottom 0.5em
-      td 
+      td
         border-bottom 1px solid lighten(color-gray,30%)
         padding 10px 0
     .pullquote
@@ -170,3 +171,27 @@ article
       margin-right 0.5em
       margin-left 1em
       float right
+  
+//comments-count
+.comments-count
+  color color-font
+  margin-top 0
+  padding 0.5em 0
+  float right
+  span
+    &:before
+      font-family font-icon-family
+      font-smoothing()
+      content "\f075"
+
+.comments-count-link
+  padding 0.5em
+  margin 0 0.3em
+  &:hover
+    color color-theme
+
+//阅读更多
+.article-more-link
+  padding-top: 0.5em
+  span
+   color color-theme

@@ -1,6 +1,6 @@
 <% if(theme.google_cse.enable) { %>
 <div  id="main" class="page">
-  <div id='cse' style='width:100%;text-align:center'>正在加载搜索结果，请稍等。</div>
+  <div id='cse' style='width:100%;text-align:center'>正在加载Google搜索结果，请稍等。</div>
 </div>
 <script src="http://www.google.com.hk/jsapi" type="text/javascript"></script>
 <script type="text/javascript">
@@ -18,4 +18,36 @@ google.setOnLoadCallback(function(){
   }
 },true);
 </script>
+<% } else if(theme.swiftype_search.enable) { %>
+<div id="st-results-container" style='width:80%'>正在加载搜索结果，请稍等。</div>
+<style>
+.st-result-text {
+  background: #fafafa;
+  display: block;
+  border-left: 0.5em solid #ccc;
+  -webkit-transition: border-left 0.45s;
+  -moz-transition: border-left 0.45s;
+  -o-transition: border-left 0.45s;
+  -ms-transition: border-left 0.45s;
+  transition: border-left 0.45s;
+  padding: 0.5em;
+}
+@media only screen and (min-width: 768px) {
+  .st-result-text {
+    padding: 1em;
+  }
+}
+.st-result-text:hover {
+  border-left: 0.5em solid #8db3e2;
+}
+.st-result-text h3 a{
+  color: #17365d;
+  line-height: 1.5;
+  font-size: 22px;
+}
+.st-snippet em {
+  font-weight: bold;
+  color: #8db3e2;
+}
+</style>
 <% } %>

@@ -1,18 +1,24 @@
 <section class="<%= item.layout %>" itemscope itemprop="blogPost">
-  <% if (item.link) { %> 
-    <a href="<%- item.link %>" target="_blank"> 
+  <% if (item.link) { %>
+    <a href="<%- item.link %>" target="_blank">
   <% } else{ %>
     <a href="<%- config.root %><%- item.path %>" title="<%= item.title %>" itemprop="url">
   <% } %>
       <time datetime="<%= date_xml(item.date) %>" itemprop="datePublished"><%= item.date.format(config.date_format) %></time>
+    <div class="comments-count">
+  <span class="ds-thread-count comments-count-link" data-thread-key="<%- item.path %>" data-title="<%- page.title %>" data-url="<%- page.permalink %>">暂无评论</span>
+</div>
     <h1 itemprop="name"><%= item.title %></h1>
+
+
+
     <% if (desc){ %>
      <% if(item.description){ %>
-      <p itemprop="description" ><%- item.description %></p>
+      <p itemprop="description" ><%- item.description %>p class="article-more-link"><span>阅读更多</span></p></p>
       <% } else if(item.excerpt){ %>
-       <p itemprop="description" ><%= strip_html(item.excerpt).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 140) %></p>
+       <p itemprop="description" ><%= strip_html(item.excerpt).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 300) %>......<p class="article-more-link"><span>阅读更多</span></p></p>
       <% } else {%>
-           <p itemprop="description" ><%= strip_html(item.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 140) %></p>
+           <p itemprop="description" ><%= strip_html(item.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 300) %>......<p class="article-more-link"><span>阅读更多</span></p></p>
         <% } %>
     <% } %>
   </a>

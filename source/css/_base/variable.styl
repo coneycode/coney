@@ -11,8 +11,11 @@ if(font is a 'rgba')
 else
   color-font = #817c7c
 
-color-white = #ffffff
-color-blue = #2ca6cb
+title = convert(hexo-config("theme_color.title"))
+if(title is a 'rgba')
+  color-title = title
+else
+  color-title = #2ca6cb
 
 theme = convert(hexo-config("theme_color.theme"))
 if(theme is a 'rgba')
@@ -20,15 +23,10 @@ if(theme is a 'rgba')
 else
   color-theme = #ea6753
 
+color-content = #413F3F
+color-white = #ffffff
 color-font-nav =#E9CD4C
 color-section = #fafafa
-
-footer = convert(hexo-config("theme_color.footer"))
-if(footer is a 'rgba')
-  color-footer = footer
-else
-  color-footer = #ddd
-
 color-gray = #CCC
 color-heading = #333333
 color-code = #eee
@@ -50,7 +48,7 @@ tablet = "only screen and (min-width: " + width-tablet + ")"
 desktop = "only screen and (min-width: " + width-desktop + ")"
 
 //Font
-font-default = "Helvetica Neue", "Helvetica","Microsoft YaHei", "WenQuanYi Micro Hei",Arial, sans-serif
+font-default = "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif
 font-serif = "Georgia", serif
 font-mono = Monaco, Menlo, Consolas, Courier New, monospace
 font-custom-family = "covered_by_your_graceregular"
@@ -71,6 +69,7 @@ root = hexo-config("root")
 
 //comment
 duoshuo = hexo-config("duoshuo.enable")
+
 
 //highlight
 highlight = hexo-config("highlight.enable")
